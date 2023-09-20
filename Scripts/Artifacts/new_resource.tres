@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Artifact" load_steps=2 format=3 uid="uid://cytfgw38krnh8"]
+
+[ext_resource type="Script" path="res://Scripts/Artifacts/Artifact.gd" id="1_nwvo3"]
+
+[resource]
+script = ExtResource("1_nwvo3")
+name = "Test"
+armor = 1
+main_stat = 1
+sub_stats = []
+rarity = 0
