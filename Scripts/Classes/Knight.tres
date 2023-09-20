@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="_class" load_steps=2 format=3 uid="uid://njlclatcc8s8"]
+
+[ext_resource type="Script" path="res://Scripts/Classes/FantasyClass.gd" id="1_rv11g"]
+
+[resource]
+script = ExtResource("1_rv11g")
+name = "Knight"

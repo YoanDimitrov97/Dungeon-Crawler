@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Races" load_steps=2 format=3 uid="uid://bjwu6fdkbagib"]
+
+[ext_resource type="Script" path="res://Scripts/Races/Races.gd" id="1_fbaox"]
+
+[resource]
+script = ExtResource("1_fbaox")
+race_name = "Human"

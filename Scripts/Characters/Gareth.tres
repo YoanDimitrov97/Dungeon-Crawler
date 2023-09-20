@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Character" load_steps=4 format=3 uid="uid://d2jqju4fhpfcc"]
+
+[ext_resource type="Resource" uid="uid://bjwu6fdkbagib" path="res://Scripts/Races/Human.tres" id="1_2hoj2"]
+[ext_resource type="Script" path="res://Scripts/Characters/Character.gd" id="1_fcphd"]
+[ext_resource type="Resource" uid="uid://njlclatcc8s8" path="res://Scripts/Classes/Knight.tres" id="1_gycgf"]
+
+[resource]
+script = ExtResource("1_fcphd")
+character_name = ""
+SPD = 0
+HP = 0
+MANA = 0
+ATK = 0
+DEF = 0
+WIS = 0
+RES = 0
+race = ExtResource("1_2hoj2")
+FantasyClass = ExtResource("1_gycgf")

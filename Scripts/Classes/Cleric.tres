@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="FantasyClass" load_steps=2 format=3 uid="uid://biwn5v8wsa5ns"]
+
+[sub_resource type="GDScript" id="GDScript_32mup"]
+script/source = "extends Resource
+
+class_name FantasyClass
+
+@export var name := \"\"
+"
+
+[resource]
+script = SubResource("GDScript_32mup")
+name = "Cleric"
