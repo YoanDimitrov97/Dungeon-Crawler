@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Stats" load_steps=2 format=3 uid="uid://dvg774yqr7ok3"]
+
+[ext_resource type="Script" path="res://Scripts/Items/Stats/Stats.gd" id="1_ejinv"]
+
+[resource]
+script = ExtResource("1_ejinv")
+mandatory = false
+chance = 1.0
+spec_name = "ATK"
+min_value = 2
+max_value = 20

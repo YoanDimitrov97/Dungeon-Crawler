@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Stats" load_steps=2 format=3 uid="uid://bhwf333n174rt"]
+
+[ext_resource type="Script" path="res://Scripts/Items/Stats/Stats.gd" id="1_h4pvc"]
+
+[resource]
+script = ExtResource("1_h4pvc")
+mandatory = false
+chance = 1.0
+spec_name = "DEF"
+min_value = 1
+max_value = 30

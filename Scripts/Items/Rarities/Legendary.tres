@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Rarity" load_steps=2 format=3 uid="uid://cbp6ubqb404tt"]
+
+[ext_resource type="Script" path="res://Scripts/Items/Rarities/Rarity.gd" id="1_n6yvi"]
+
+[resource]
+script = ExtResource("1_n6yvi")
+chance = 0.1
+rarity_name = "Legendary"
+stat_multiplier = 3.0
+ui_color = Color(0.886275, 0.631373, 0, 1)

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Stats" load_steps=2 format=3 uid="uid://cj062owyya2ut"]
+
+[ext_resource type="Script" path="res://Scripts/Items/Stats/Stats.gd" id="1_q3bis"]
+
+[resource]
+script = ExtResource("1_q3bis")
+mandatory = false
+chance = 1.0
+spec_name = "HP"
+min_value = 6
+max_value = 48

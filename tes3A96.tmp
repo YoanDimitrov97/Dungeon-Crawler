@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcd8kcimmpqyb"]
+
+[ext_resource type="Texture2D" uid="uid://debwdp3qfnn3c" path="res://Assets/Fantasy Battlers - Free/Original size/01.png" id="2_4qlxm"]
+[ext_resource type="Script" path="res://TextureRect.gd" id="2_mu70l"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Node" type="Node" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Node"]
+offset_left = 334.0
+offset_top = -46.0
+offset_right = 906.0
+offset_bottom = 576.0
+texture = ExtResource("2_4qlxm")
+script = ExtResource("2_mu70l")
