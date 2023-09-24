@@ -1,7 +1,0 @@
-[gd_resource type="Resource" script_class="Races" load_steps=2 format=3 uid="uid://bdtu0wagq7swu"]
-
-[ext_resource type="Script" path="res://Scripts/Races/Races.gd" id="1_upmc7"]
-
-[resource]
-script = ExtResource("1_upmc7")
-race_name = "Dwarf"

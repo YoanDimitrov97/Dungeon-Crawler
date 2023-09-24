@@ -4,7 +4,6 @@
 
 [resource]
 script = ExtResource("1_7cous")
-mandatory = false
 chance = 1.0
 spec_name = "RES"
 min_value = 1

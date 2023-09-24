@@ -4,7 +4,6 @@
 
 [resource]
 script = ExtResource("1_te70f")
-mandatory = false
 chance = 1.0
 spec_name = "WIS"
 min_value = 2

@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0s2nj3ca4je7"]
+
+[ext_resource type="Texture2D" uid="uid://pee8uu7plvjv" path="res://Assets/Egypt Knight.png" id="1_nc2ay"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -72.0
+offset_right = 72.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.056
+anchor_right = 0.75
+anchor_bottom = 0.556
+offset_top = -0.0640001
+offset_bottom = -0.0640106
+grow_horizontal = 2
+texture = ExtResource("1_nc2ay")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.056
+anchor_top = 0.535
+anchor_right = 0.431
+anchor_bottom = 0.715
+offset_left = -0.0640001
+offset_top = -0.0400009
+offset_right = -0.064003
+offset_bottom = 0.0399933
+text = "Gareth"
+
+[node name="Class" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.569
+anchor_top = 0.535
+anchor_right = 0.944
+anchor_bottom = 0.715
+offset_left = 0.0639954
+offset_top = -0.0400009
+offset_right = 0.0639954
+offset_bottom = 0.0399933
+text = "Knight"
+horizontal_alignment = 2

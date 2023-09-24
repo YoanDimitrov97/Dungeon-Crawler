@@ -1,9 +1,62 @@
-[gd_scene format=3 uid="uid://de2g8xl630dp0"]
+[gd_scene load_steps=2 format=3 uid="uid://de2g8xl630dp0"]
+
+[ext_resource type="PackedScene" uid="uid://c0s2nj3ca4je7" path="res://character.tscn" id="1_yiq3u"]
 
 [node name="Battle" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="char1" parent="." instance=ExtResource("1_yiq3u")]
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_top = -144.0
+offset_right = 144.0
+grow_horizontal = 1
+grow_vertical = 0
+
+[node name="char2" parent="." instance=ExtResource("1_yiq3u")]
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 144.0
+offset_top = -144.0
+offset_right = 288.0
+grow_horizontal = 1
+grow_vertical = 0
+
+[node name="char3" parent="." instance=ExtResource("1_yiq3u")]
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 288.0
+offset_top = -144.0
+offset_right = 432.0
+grow_horizontal = 1
+grow_vertical = 0
+
+[node name="char4" parent="." instance=ExtResource("1_yiq3u")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -144.0
+offset_top = -144.0
+grow_horizontal = 0
+grow_vertical = 0

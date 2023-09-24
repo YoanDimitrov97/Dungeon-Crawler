@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="_class" load_steps=2 format=3 uid="uid://crefa8aykgdle"]
+
+[ext_resource type="Script" path="res://Scripts/Characters/Classes/FantasyJob.gd" id="1_kw3s6"]
+
+[resource]
+script = ExtResource("1_kw3s6")
+name = "Mage"

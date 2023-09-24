@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://dvuph1t33esy6"]
+
+[ext_resource type="Resource" uid="uid://crefa8aykgdle" path="res://Scripts/Characters/Classes/Mage.tres" id="1_3u5of"]
+[ext_resource type="Script" path="res://Scripts/Characters/Character.gd" id="1_qdrj8"]
+[ext_resource type="Texture2D" uid="uid://dlp81feiu8rii" path="res://Assets/Characters/Klaus.png" id="1_xxkfp"]
+[ext_resource type="Resource" uid="uid://bjwu6fdkbagib" path="res://Scripts/Characters/Races/Human.tres" id="3_75ltr"]
+
+[resource]
+script = ExtResource("1_qdrj8")
+character_name = "Klaus"
+avatar = ExtResource("1_xxkfp")
+SPD = 1
+HP = 70
+MANA = 100
+ATK = 5
+DEF = 10
+WIS = 40
+RES = 40
+race = ExtResource("3_75ltr")
+FantasyJob = ExtResource("1_3u5of")
+weapon_type = 0

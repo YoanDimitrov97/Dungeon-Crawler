@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://ci5ypaj2aput1"]
+
+[ext_resource type="Script" path="res://Scripts/Characters/Character.gd" id="1_4la3b"]
+[ext_resource type="Texture2D" uid="uid://kf3fo3atlsak" path="res://Assets/Characters/Emily.png" id="1_lhkpx"]
+[ext_resource type="Resource" uid="uid://biwn5v8wsa5ns" path="res://Scripts/Characters/Classes/Cleric.tres" id="1_x5jc0"]
+[ext_resource type="Resource" uid="uid://bxg0rdajriahs" path="res://Scripts/Characters/Races/Elf.tres" id="3_rsysm"]
+
+[resource]
+script = ExtResource("1_4la3b")
+character_name = "Emily"
+avatar = ExtResource("1_lhkpx")
+SPD = 2
+HP = 80
+MANA = 100
+ATK = 10
+DEF = 10
+WIS = 30
+RES = 30
+race = ExtResource("3_rsysm")
+FantasyJob = ExtResource("1_x5jc0")
+weapon_type = 2
