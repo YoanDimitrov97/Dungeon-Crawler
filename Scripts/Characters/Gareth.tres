@@ -1,21 +1,21 @@
-[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://d2jqju4fhpfcc"]
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://cc382ddutgp2v"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Character.gd" id="1_fcphd"]
-[ext_resource type="Resource" uid="uid://njlclatcc8s8" path="res://Scripts/Characters/Classes/Knight.tres" id="1_xm87l"]
-[ext_resource type="Texture2D" uid="uid://bmktfjdw4qct5" path="res://Assets/Gareth.png" id="2_hfqdn"]
-[ext_resource type="Resource" uid="uid://bjwu6fdkbagib" path="res://Scripts/Characters/Races/Human.tres" id="3_7p2t4"]
+[ext_resource type="Resource" uid="uid://njlclatcc8s8" path="res://Scripts/Characters/Classes/Knight.tres" id="1_xa5mb"]
+[ext_resource type="Texture2D" uid="uid://c3akhy68ffsbc" path="res://Assets/Characters/Gareth.png" id="2_c23em"]
+[ext_resource type="Resource" uid="uid://bjwu6fdkbagib" path="res://Scripts/Characters/Races/Human.tres" id="3_gfsmh"]
 
 [resource]
 script = ExtResource("1_fcphd")
 character_name = "Gareth"
-avatar = ExtResource("2_hfqdn")
-SPD = 4
+avatar = ExtResource("2_c23em")
+SPD = 3
 HP = 120
 MANA = 100
 ATK = 25
 DEF = 40
-WIS = 10
+WIS = 5
 RES = 20
-race = ExtResource("3_7p2t4")
-FantasyJob = ExtResource("1_xm87l")
+race = ExtResource("3_gfsmh")
+FantasyJob = ExtResource("1_xa5mb")
 weapon_type = 0

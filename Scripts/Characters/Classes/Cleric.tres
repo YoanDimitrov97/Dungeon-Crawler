@@ -1,13 +1,7 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://biwn5v8wsa5ns"]
+[gd_resource type="Resource" script_class="FantasyJob" load_steps=2 format=3 uid="uid://c0fh72nlxiqf8"]
 
-[sub_resource type="GDScript" id="GDScript_32mup"]
-script/source = "extends Resource
-
-class_name FantasyClass
-
-@export var name := \"\"
-"
+[ext_resource type="Script" path="res://Scripts/Characters/Classes/FantasyJob.gd" id="1_wddon"]
 
 [resource]
-script = SubResource("GDScript_32mup")
-name = "Cleric"
+script = ExtResource("1_wddon")
+job_name = "Cleric"

@@ -1,18 +1,39 @@
-[gd_scene load_steps=2 format=3 uid="uid://djr3uwd0wncbw"]
+[gd_scene load_steps=6 format=3 uid="uid://djr3uwd0wncbw"]
 
 [ext_resource type="Texture2D" uid="uid://c3akhy68ffsbc" path="res://Assets/Characters/Gareth.png" id="1_5cjsk"]
+[ext_resource type="Script" path="res://character_icon.gd" id="1_h7rmn"]
+
+[sub_resource type="Gradient" id="Gradient_5trtk"]
+colors = PackedColorArray(0.762655, 0.481579, 0.0745708, 1, 0.788701, 0.727087, 0.538004, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a02lk"]
+gradient = SubResource("Gradient_5trtk")
+use_hdr = true
+fill_from = Vector2(0.504587, 0.944954)
+fill_to = Vector2(0.527523, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gpwea"]
+bg_color = Color(0.196078, 0.196078, 0.196078, 0.686275)
 
 [node name="Control" type="Control"]
 layout_mode = 3
+anchor_right = 0.25
+anchor_bottom = 0.141
+offset_bottom = -0.384003
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h7rmn")
+
+[node name="BGN" type="TextureRect" parent="."]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -444.0
-offset_bottom = -892.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = SubResource("GradientTexture2D_a02lk")
 
-[node name="Avatar" type="TextureRect" parent="."]
+[node name="Avatar" type="TextureRect" parent="BGN"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,3 +43,16 @@ grow_vertical = 2
 texture = ExtResource("1_5cjsk")
 expand_mode = 2
 stretch_mode = 5
+
+[node name="Label" type="Label" parent="BGN/Avatar"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_gpwea")
+text = "Character"
+horizontal_alignment = 1

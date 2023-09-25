@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2aca0m06uu66"]
+
+[ext_resource type="PackedScene" uid="uid://djr3uwd0wncbw" path="res://character_icon.tscn" id="1_pkldt"]
+[ext_resource type="Resource" uid="uid://ci5ypaj2aput1" path="res://Scripts/Characters/Emily.tres" id="2_4mym1"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(576, 824)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VScrollBar" type="VScrollBar" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="Gareth" parent="ScrollContainer/VScrollBar" instance=ExtResource("1_pkldt")]
+custom_minimum_size = Vector2(576, 200)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 576.0
+offset_bottom = 200.0
+grow_horizontal = 1
+grow_vertical = 1
+res = ExtResource("2_4mym1")

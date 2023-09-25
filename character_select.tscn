@@ -1,0 +1,166 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2aca0m06uu66"]
+
+[ext_resource type="PackedScene" uid="uid://djr3uwd0wncbw" path="res://character_icon.tscn" id="1_pkldt"]
+[ext_resource type="Resource" uid="uid://ci5ypaj2aput1" path="res://Scripts/Characters/Emily.tres" id="2_4mym1"]
+[ext_resource type="Resource" uid="uid://cc382ddutgp2v" path="res://Scripts/Characters/Gareth.tres" id="2_eulcs"]
+[ext_resource type="Resource" uid="uid://dvuph1t33esy6" path="res://Scripts/Characters/Klaus.tres" id="4_w6g6e"]
+[ext_resource type="StyleBox" uid="uid://nul58jg88fb4" path="res://Scripts/UI/party_panel_style.tres" id="5_ksil5"]
+[ext_resource type="StyleBox" uid="uid://ck08uraf0vjj5" path="res://Scripts/UI/party_label_style.tres" id="6_afswc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(576, 880)
+layout_mode = 0
+offset_top = 144.0
+offset_right = 576.0
+offset_bottom = 1024.0
+
+[node name="VScrollBar" type="VScrollBar" parent="ScrollContainer"]
+custom_minimum_size = Vector2(0, 824)
+layout_mode = 2
+size_flags_horizontal = 8
+custom_step = 1.0
+
+[node name="Gareth" parent="ScrollContainer/VScrollBar" instance=ExtResource("1_pkldt")]
+custom_minimum_size = Vector2(142, 142)
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 2.0
+offset_right = 142.0
+offset_bottom = 144.0
+grow_horizontal = 1
+grow_vertical = 1
+character = ExtResource("2_eulcs")
+
+[node name="Emily" parent="ScrollContainer/VScrollBar" instance=ExtResource("1_pkldt")]
+custom_minimum_size = Vector2(142, 142)
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 144.0
+offset_top = 2.0
+offset_right = 286.0
+offset_bottom = 144.0
+grow_horizontal = 1
+grow_vertical = 1
+character = ExtResource("2_4mym1")
+
+[node name="Klaus" parent="ScrollContainer/VScrollBar" instance=ExtResource("1_pkldt")]
+custom_minimum_size = Vector2(142, 142)
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 288.0
+offset_top = 2.0
+offset_right = 430.0
+offset_bottom = 144.0
+grow_horizontal = 1
+grow_vertical = 1
+character = ExtResource("4_w6g6e")
+
+[node name="Party" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 144.0
+offset_bottom = 144.0
+theme_override_styles/panel = ExtResource("5_ksil5")
+
+[node name="Label" type="Label" parent="Party"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -72.0
+offset_top = -26.0
+offset_right = 72.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("6_afswc")
+text = "Party 1"
+horizontal_alignment = 1
+
+[node name="Party2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 144.0
+offset_right = 288.0
+offset_bottom = 144.0
+theme_override_styles/panel = ExtResource("5_ksil5")
+
+[node name="Label" type="Label" parent="Party2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -72.0
+offset_top = -26.0
+offset_right = 72.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("6_afswc")
+text = "Party 2
+"
+horizontal_alignment = 1
+
+[node name="Party3" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 288.0
+offset_right = 432.0
+offset_bottom = 144.0
+theme_override_styles/panel = ExtResource("5_ksil5")
+
+[node name="Label" type="Label" parent="Party3"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -72.0
+offset_top = -26.0
+offset_right = 72.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("6_afswc")
+text = "Party 3"
+horizontal_alignment = 1
+
+[node name="Party4" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 432.0
+offset_right = 576.0
+offset_bottom = 144.0
+theme_override_styles/panel = ExtResource("5_ksil5")
+
+[node name="Label" type="Label" parent="Party4"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -72.0
+offset_top = -26.0
+offset_right = 72.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = ExtResource("6_afswc")
+text = "Party 4"
+horizontal_alignment = 1

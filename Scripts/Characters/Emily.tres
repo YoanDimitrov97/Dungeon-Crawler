@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Characters/Character.gd" id="1_4la3b"]
 [ext_resource type="Texture2D" uid="uid://kf3fo3atlsak" path="res://Assets/Characters/Emily.png" id="1_lhkpx"]
-[ext_resource type="Resource" uid="uid://biwn5v8wsa5ns" path="res://Scripts/Characters/Classes/Cleric.tres" id="1_x5jc0"]
+[ext_resource type="Resource" uid="uid://c0fh72nlxiqf8" path="res://Scripts/Characters/Classes/Cleric.tres" id="1_x5jc0"]
 [ext_resource type="Resource" uid="uid://bxg0rdajriahs" path="res://Scripts/Characters/Races/Elf.tres" id="3_rsysm"]
 
 [resource]
